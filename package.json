@@ -1,6 +1,6 @@
 {
   "name": "origami-plugin-setup",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Setup initial user plugin for Origami",
   "main": "dist/plugin.js",
   "repository": "https://github.com/origami-cms/plugin-google-analytics",
