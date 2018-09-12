@@ -1,0 +1,30 @@
+{
+  "name": "origami-plugin-setup",
+  "version": "0.0.1",
+  "description": "Setup initial user plugin for Origami",
+  "main": "dist/plugin.js",
+  "repository": "https://github.com/origami-cms/plugin-google-analytics",
+  "author": "Tristan Matthias <hello@tristanmatthias.com>",
+  "license": "MIT",
+  "scripts": {
+    "build:js": "tsc",
+    "build:sass": "node-sass sass/ -o public/ --include-path ./node_modules",
+    "prebuild": "rm -r dist/",
+    "build": "yarn build:js & yarn build:sass",
+    "watch": "yarn build:js -w & yarn build:sass -w"
+  },
+  "devDependencies": {
+    "@types/http-errors": "^1.6.1",
+    "node-sass": "^4.9.3",
+    "origami-core-server": "^0.5.4-alpha.6",
+    "origami-zen": "^0.4.1",
+    "tslint": "^5.11.0",
+    "tslint-config-origami": "^1.0.3",
+    "typescript": "^3.0.3",
+    "zen-css": "^1.1.16"
+  },
+  "dependencies": {
+    "http-errors": "^1.7.1",
+    "origami-core-lib": "^0.3.15-alpha.3"
+  }
+}
